@@ -15,7 +15,7 @@
 <p class="date">Dernière mise à jour : 13 octobre 2026</p>
 
 <div class="bref">
-<p><strong>En bref.</strong> Tes enregistrements de cours et leurs transcriptions restent sur ton iPad. Ton rangement, tes diapos et tes annotations sont hébergés en Europe (Paris) pour que tu les retrouves. Mnésie n'affiche aucune publicité, ne revend rien, ne te piste pas et n'utilise pas tes cours pour entraîner une IA. Tu peux exporter ou supprimer toutes tes données depuis l'app, à tout moment.</p>
+<p><strong>En bref.</strong> Tes enregistrements de cours et leurs transcriptions restent sur ton iPad. Ton rangement, tes diapos et tes annotations sont hébergés en Europe (Paris) pour que tu les retrouves. Mnésie n'affiche aucune publicité, ne revend rien, ne te piste pas et n'utilise pas tes cours pour entraîner une IA. Les deux options qui envoient un contenu de cours à un prestataire (transcription de qualité, mise en page par IA) sont désactivées tant que tu ne les acceptes pas. Tu peux exporter ou supprimer toutes tes données depuis l'app, à tout moment.</p>
 </div>
 
 <h2>1. Qui est responsable de tes données</h2>
@@ -31,6 +31,7 @@
 <tr><td><strong>Le déroulé de tes séances</strong> : date, durée, nom que tu donnes, coupures, chapitre</td><td>Ranger tes enregistrements dans le bon chapitre</td><td>Sur ton iPad et chez l'hébergeur, en Europe</td></tr>
 <tr><td><strong>Les enregistrements audio</strong> de tes cours</td><td>Réécouter, transcrire</td><td><strong>Sur ton iPad uniquement</strong> (voir l'exception de la transcription de qualité ci-dessous)</td></tr>
 <tr><td><strong>Les transcriptions</strong>, tes corrections, tes moments importants</td><td>Lire et chercher dans ton cours</td><td><strong>Sur ton iPad uniquement</strong></td></tr>
+<tr><td><strong>Les cours mis en page</strong> et ce que tu y as accepté, refusé ou modifié</td><td>Relire ton cours au propre</td><td><strong>Sur ton iPad uniquement</strong></td></tr>
 <tr><td><strong>Tes réglages</strong> (couleur, apparence, options)</td><td>Personnaliser l'app</td><td>Sur ton iPad uniquement</td></tr>
 </table>
 </div>
@@ -40,22 +41,27 @@
 <p>Si l'option « Transcription de qualité » est activée (elle se désactive dans les Paramètres de l'app), Mnésie envoie, après la séance, une copie de l'enregistrement à notre service de transcription médicale, <strong>Speechmatics</strong>, dans sa <strong>région européenne</strong>, accompagnée des termes tirés de tes diapos pour mieux reconnaître le vocabulaire médical. La copie transite par un stockage privé chez notre hébergeur, en Europe.</p>
 <p>Dès que la transcription est récupérée et fusionnée sur ton iPad, <strong>l'audio et le résultat sont effacés</strong> de notre stockage et le travail est supprimé chez Speechmatics. Si tu supprimes la séance avant la fin, ce qui a été envoyé est effacé aussi.</p>
 
-<h2>4. Qui traite tes données pour nous</h2>
+<h2>4. La mise en page des cours par IA</h2>
+<p>Quand tu touches « Mettre en page » sur une séance, et seulement si tu as donné ton accord (il se retire dans les Paramètres de l'app), Mnésie envoie <strong>le texte de la transcription de cette séance</strong>, avec ses minutes, et <strong>le texte de tes diapos</strong> (y compris les notes que tu y as tapées) à <strong>Mistral AI</strong>, une société française, qui héberge ce service en Europe. L'audio n'est pas envoyé. Le modèle propose un cours structuré ; il passe par une fonction de notre hébergeur à Paris, qui ne garde rien.</p>
+<p>Le cours proposé est <strong>signalé comme produit par une IA</strong>. Chaque bloc renvoie à sa minute ou à sa diapo, et un bloc qui ne s'appuie pas sur ton cours est écarté avant de t'être montré. C'est toi qui acceptes, refuses ou modifies chaque bloc ; le résultat reste sur ton iPad et disparaît avec la séance.</p>
+
+<h2>5. Qui traite tes données pour nous</h2>
 <div class="tableau">
 <table>
 <tr><th>Prestataire</th><th>Rôle</th><th>Lieu</th></tr>
 <tr><td><strong>Supabase</strong></td><td>Hébergement du compte, de la base de données et du stockage privé</td><td>Union européenne (Paris)</td></tr>
 <tr><td><strong>Speechmatics</strong></td><td>Transcription de qualité, seulement si l'option est activée</td><td>Région européenne du service</td></tr>
+<tr><td><strong>Mistral AI</strong></td><td>Mise en page des cours par IA, seulement si tu l'as acceptée et quand tu la demandes</td><td>Union européenne</td></tr>
 <tr><td><strong>Apple</strong></td><td>Connexion avec Apple (si tu la choisis), distribution de l'app (App Store, TestFlight), reconnaissance vocale sur l'iPad</td><td>Selon la politique d'Apple</td></tr>
 </table>
 </div>
 <p><strong>Transferts hors de l'Union européenne.</strong> Tes données sont stockées à Paris, mais Supabase fait partie d'un groupe dont certaines équipes et certains sous-traitants (support, sécurité, infrastructure) sont situés hors de l'Union européenne, notamment aux États-Unis : ces accès éventuels sont encadrés par les clauses contractuelles types de la Commission européenne prévues dans son accord de traitement des données. Speechmatics est une société britannique ; le Royaume-Uni bénéficie d'une décision d'adéquation de la Commission européenne.</p>
-<p>Ces prestataires agissent selon nos instructions et ne peuvent pas utiliser tes données pour leur propre compte. Si Mnésie ajoute un nouveau traitement (par exemple la mise en page des cours par un modèle d'IA hébergé en Europe), cette politique sera mise à jour avant, et les contenus produits par l'IA seront signalés comme tels.</p>
+<p>Ces prestataires agissent selon nos instructions et ne peuvent pas utiliser tes données pour leur propre compte ; en particulier, l'utilisation des données envoyées à Mistral AI pour entraîner ses modèles est désactivée. Si Mnésie ajoute un nouveau traitement, cette politique sera mise à jour avant.</p>
 
-<h2>5. Ta voix a pu être enregistrée avec Mnésie ?</h2>
-<p>Si tu es enseignant ou étudiant, ta voix peut figurer dans l'enregistrement d'un cours fait avec Mnésie. Cet enregistrement reste sur l'iPad de la personne qui l'a fait, pour son usage personnel d'étude ; il n'est jamais publié ni partagé par l'app. S'il est envoyé pour la transcription de qualité, la copie est effacée de nos serveurs dès la fin du traitement. Pour toute question ou pour exercer tes droits, écris à <a href="mailto:fokuijohanna@gmail.com">fokuijohanna@gmail.com</a>.</p>
+<h2>6. Ta voix a pu être enregistrée avec Mnésie ?</h2>
+<p>Si tu es enseignant ou étudiant, ta voix peut figurer dans l'enregistrement d'un cours fait avec Mnésie. Cet enregistrement reste sur l'iPad de la personne qui l'a fait, pour son usage personnel d'étude ; il n'est jamais publié ni partagé par l'app. S'il est envoyé pour la transcription de qualité, la copie est effacée de nos serveurs dès la fin du traitement. Si l'étudiante demande une mise en page par IA, le texte transcrit du cours (pas l'audio) est envoyé à Mistral AI pour cette seule demande. Pour toute question ou pour exercer tes droits, écris à <a href="mailto:fokuijohanna@gmail.com">fokuijohanna@gmail.com</a>.</p>
 
-<h2>6. Ce que Mnésie ne fait pas</h2>
+<h2>7. Ce que Mnésie ne fait pas</h2>
 <ul>
 <li>Pas de publicité, pas de revente ni de location de tes données.</li>
 <li>Pas de mesure d'audience, pas de pistage publicitaire, pas d'outil d'analyse tiers dans l'app.</li>
@@ -63,22 +69,23 @@
 <li>Tes cours ne sont visibles par personne d'autre : chaque compte n'a accès qu'à ses propres données.</li>
 </ul>
 
-<h2>7. Pourquoi nous avons le droit de les traiter</h2>
+<h2>8. Pourquoi nous avons le droit de les traiter</h2>
 <ul>
 <li><strong>L'exécution du service</strong> que tu utilises (ton compte, tes cours, la synchronisation) : article 6.1.b du RGPD.</li>
-<li><strong>Ton accord</strong> pour l'accès au micro et pour la transcription de qualité, que tu peux retirer à tout moment dans les réglages : article 6.1.a.</li>
+<li><strong>Ton accord</strong> pour l'accès au micro, pour la transcription de qualité et pour la mise en page par IA, que tu peux retirer à tout moment dans les réglages : article 6.1.a.</li>
 <li><strong>Notre intérêt légitime</strong> à sécuriser le service et à prévenir les abus : article 6.1.f.</li>
 </ul>
 
-<h2>8. Combien de temps</h2>
+<h2>9. Combien de temps</h2>
 <ul>
 <li>Tes données sont gardées tant que ton compte existe.</li>
 <li>Les éléments mis à la corbeille y restent jusqu'à ce que tu la vides.</li>
 <li>Les copies envoyées pour la transcription de qualité sont effacées de nos serveurs dès la fin du traitement, et le travail est supprimé chez Speechmatics, qui efface de toute façon automatiquement les fichiers au bout de 7 jours.</li>
+<li>Le texte envoyé pour une mise en page n'est pas conservé sur nos serveurs ; Mistral AI le traite selon ses conditions, sans l'utiliser pour entraîner ses modèles. Le cours mis en page reste sur ton iPad jusqu'à ce que tu supprimes la séance.</li>
 <li>Quand tu supprimes ton compte, tes données sont effacées de nos serveurs et de ton iPad ; les copies de sauvegarde techniques de notre hébergeur disparaissent ensuite à l'expiration de leur cycle de rotation.</li>
 </ul>
 
-<h2>9. Tes droits</h2>
+<h2>10. Tes droits</h2>
 <p>Tu peux à tout moment accéder à tes données, les corriger, les effacer, en recevoir une copie, t'opposer à un traitement ou en demander la limitation. Deux droits se font directement dans l'app, rubrique Paramètres :</p>
 <ul>
 <li><strong>Exporter mes données</strong> : une copie de tes diapos annotées, transcriptions et enregistrements.</li>
@@ -86,16 +93,16 @@
 </ul>
 <p>Pour les autres demandes, écris à <a href="mailto:fokuijohanna@gmail.com">fokuijohanna@gmail.com</a> ; réponse sous un mois. Tu peux aussi saisir l'autorité de protection des données : la <a href="https://www.cnil.fr/fr/plaintes">CNIL</a> en France, l'<a href="https://www.autoriteprotectiondonnees.be">Autorité de protection des données</a> en Belgique.</p>
 
-<h2>10. Sécurité</h2>
-<p>Les échanges entre l'app et nos serveurs sont chiffrés (HTTPS). Les données hébergées sont chiffrées au repos par notre hébergeur, et les règles d'accès de la base de données garantissent que chaque compte ne voit que ses propres données. Les clés des services de transcription restent sur nos serveurs, jamais dans l'app.</p>
+<h2>11. Sécurité</h2>
+<p>Les échanges entre l'app et nos serveurs sont chiffrés (HTTPS). Les données hébergées sont chiffrées au repos par notre hébergeur, et les règles d'accès de la base de données garantissent que chaque compte ne voit que ses propres données. Les clés des services de transcription et d'IA restent sur nos serveurs, jamais dans l'app.</p>
 
-<h2>11. Enregistrer un cours</h2>
+<h2>12. Enregistrer un cours</h2>
 <p>Enregistrer un enseignant est sous ta responsabilité : vérifie le règlement de ton établissement et demande l'accord de l'enseignant (à l'ULB par exemple, le règlement des études l'exige). Les cours oraux et les diapos sont protégés par le droit d'auteur : les enregistrements sont réservés à ton usage personnel d'étude et ne doivent pas être diffusés. N'importe dans l'app aucune donnée permettant d'identifier un patient.</p>
 
-<h2>12. Âge</h2>
+<h2>13. Âge</h2>
 <p>Mnésie s'adresse aux étudiantes et étudiants de l'enseignement supérieur. Elle n'est pas destinée aux moins de 15 ans.</p>
 
-<h2>13. Modifications</h2>
+<h2>14. Modifications</h2>
 <p>Si cette politique change de façon importante, l'app te prévient avant que le changement s'applique. La date en haut de la page indique la dernière version.</p>
 </main>
 <footer><a href="/">Accueil</a><a href="/aide/">Aide et contact</a><a href="/confidentialite/">Confidentialité</a><a href="/mentions-legales/">Mentions légales</a></footer>
